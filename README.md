@@ -12,18 +12,27 @@ Busquei construir uma aplicação prática que simulasse um cenário real de uso
 - **TypeScript** — Tipagem estática para maior segurança e produtividade no desenvolvimento.
 - **Tailwind CSS** — Estilização ágil com classes utilitárias.
 - **API de Scanner de Código de Barras** — Responsável por capturar e interpretar os códigos em tempo real através da câmera.
+- **Local Storage** — Utilizado temporariamente como armazenamento dos códigos lidos.
 
 ## Funcionalidades
 
 - Captura e leitura automática de códigos de barras via câmera.
 - Exibição imediata do valor lido.
+- Armazenamento dos códigos lidos no navegador via Local Storage.
 - Interface responsiva e intuitiva para facilitar o uso.
+
+## Melhorias Futuras
+
+- Substituição do Local Storage por um banco de dados real.
+- Criação de histórico de leituras com data e hora.
+- Geração de relatórios ou exportação de dados.
+- Integração com sistemas de gerenciamento de estoque.
+- Suporte a diferentes tipos de códigos (QR Code, Data Matrix etc.).
 
 ## Considerações Finais
 
-Este projeto foi uma oportunidade de explorar a comunicação entre front-end e APIs, além de consolidar conhecimentos em React com TypeScript e estilização com Tailwind. É uma base sólida para futuras funcionalidades como cadastro, histórico de leituras ou integração com banco de dados.
+Este projeto foi uma oportunidade de explorar a comunicação entre front-end e APIs, além de consolidar conhecimentos em React com TypeScript e estilização com Tailwind. É uma base sólida para futuras funcionalidades mais robustas e completas.
 
 ---
 
-**Desenvolvido por [Kayo Weiber]**
-
+**Desenvolvido por [Kayo Weiber](https://www.linkedin.com/in/kayo-weiber/)**
