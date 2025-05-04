@@ -21,26 +21,14 @@ export default function CadastrarCOD() {
       <h1 className="text-2xl font-bold mb-2">Cadastrar Código de Barras</h1>
       <form className="flex flex-col gap-4 w-full max-w-md">
         <div className="relative">
-          <input
-            type="text"
-            value={codigo}
-            onChange={(e) => setCodigo(e.target.value)}
-            placeholder="Código de Barras"
-            className="border border-gray-500 rounded-lg p-2 w-full pr-10"
-          />
+          <input type="text" value={codigo} onChange={(e) => setCodigo(e.target.value)} placeholder="Código de Barras" className="border border-gray-500 rounded-lg p-2 w-full pr-10"/>
           <HiOutlineCamera
             className="absolute right-6 w-6 h-6 top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer"
             onClick={() => setShowScanner(true)}
           />
         </div>
 
-        <input
-          type="text"
-          value={descricao}
-          onChange={(e) => setDescricao(e.target.value)}
-          placeholder="Descrição"
-          className="border border-gray-300 rounded-lg p-2"
-        />
+        <input type="text" value={descricao} onChange={(e) => setDescricao(e.target.value)} placeholder="Descrição" className="border border-gray-300 rounded-lg p-2"/>
 
         <button
           type="submit"

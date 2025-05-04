@@ -12,8 +12,6 @@ export default function PesquisarCOD() {
   const handleDetected = (value: string) => {
     setCodigo(value);
     setShowScanner(false);
-    setProdutoEncontrado(null);
-    setBuscou(false);
   };
 
   const handlePesquisar = (e: React.FormEvent) => {
@@ -32,9 +30,7 @@ export default function PesquisarCOD() {
             type="text"
             value={codigo}
             onChange={(e) => {
-              setCodigo(e.target.value);
-              setProdutoEncontrado(null);
-              setBuscou(false);
+              setCodigo(e.target.value); // Não limpa o resultado ao digitar
             }}
             placeholder="Código de Barras"
             className="border border-gray-500 rounded-lg p-2 w-full pr-10"
